@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="front/css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Отмены ОНС</title>
+   <script defer src="js/app.js"></script>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__body">
+            <div class="header__logo">
+               <img src="img/logo.jpg" alt="logoONS">
+            </div>
+            <div class="header__title">Методичка по отменам ОНС</div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="cancels">
+            <div class="cancel__body">
+               <div class="box" id="main">
+                  <div class="reason">
+                     <div class="reason__block">
+                        Выберите отмену из списка:
+                        <ul class="reason__list">
+                           <li class="reason__item"><a class="reason__btn" href="#bitoe">Битое видео</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#nechitaem">Нечитаемый номерной
+                                 знак</a>
+                           </li>
+                           <li class="reason__item"><a class="reason__btn" href="#control">Некорректные данные
+                                 контролерра</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#netFakta">Нет факта нарушения</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#pogoda">Погодные условия</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#pomehi">Помехи перед ГРНЗ</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#perek">Перекрытие разметки</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#neGrnz">Не ГРНЗ</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#sehCam">Съехала камера</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#focus">Сбился фокус</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#sehNastr">Съехавшие настройки
+                                 камеры</a>
+                           </li>
+                           <li class="reason__item"><a class="reason__btn" href="#nomerVs">Номер расположен высоко</a>
+                           </li>
+                           <li class="reason__item"><a class="reason__btn" href="#buksir">ТС на буксире/автовозе</a>
+                           </li>
+                           <li class="reason__item"><a class="reason__btn" href="#track">Ошибки в линии трека</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#razmetki">Отсутствие разметки</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#proekcia">Проблемы с определением
+                                 проекции
+                                 ТС</a></li>
+                           <li class="reason__item"><a class="reason__btn" href="#obrezan">Обрезанное фото
+                                 предписания</a>
+                           </li>
+                           <li class="reason__item"><a class="reason__btn" href="#media">Отсутствие медифайлов</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cancel" id="bitoe">
+                  <div class="cancel__title">Битое видео</div>
+                  <div class="cancel__text">Битое видео - обрывистые кадры ТС, пропадания ТС на видео; (магистраль) ;
+                  </div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/bitoe/01.jpg" alt="">
+                     <img class="pic__item" src="img/bitoe/02.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="nechitaem">
+                  <div class="cancel__title">Нечитаемый номерной знак</div>
+                  <div class="cancel__text">Нечитаемый номерной знак - исключительно в случаях когда номер полностью не
+                     представляется возможным идентифицировать, случаи когда на фото и видео не видно номера ТС</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/nechit/photo_2023-05-10_12-53-15.jpg" alt="">
+                     <img class="pic__item" src="img/nechit/1.jpg" alt="">
+                     <img class="pic__item" src="img/nechit/2.jpg" alt="">
+                     <img class="pic__item" src="img/nechit/3.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="control">
+                  <div class="cancel__title">Некорректные данные контроллера</div>
+                  <div class="cancel__text">В случаях когда фиксирует как проезд на красный/пересечение стоп линии, но
+                     на видео светофор горит зеленым</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/controller/1.jpg" alt="">
+                     <img class="pic__item" src="img/controller/2.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="netFakta">
+                  <div class="cancel__title">Нет факта нарушения</div>
+                  <div class="cancel__text">В случаях когда ТС стоит в пробке и фиксируется как Остановка запрещена.
+                     <br>При
+                     верных настройках калибровки по сплошным линиям, в случаях когда ТС
+                     проезжает участок дороги без пересечения колесами сплошной полосы нарушения
+                     – отменяются как нет факта нарушения.
+                  </div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/netFakta/photo_2023-05-31_13-01-57.jpg" alt="">
+                     <img class="pic__item" src="img/netFakta/photo_2023-05-31_13-01-57 (2).jpg" alt="">
+                     <img class="pic__item" src="img/netFakta/1.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="pogoda">
+                  <div class="cancel__title">Погодные условия</div>
+                  <div class="cancel__text">Плохая видимость из-за дождя</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/pogoda/photo_2023-08-07_18-33-33.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="pomehi">
+                  <div class="cancel__title">Помехи перед ГРНЗ</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/pomehi/photo_2023-05-31_13-25-25.jpg" alt="">
+                     <img class="pic__item" src="img/pomehi/photo_2023-05-31_18-56-43.jpg" alt="">
+                     <img class="pic__item" src="img/pomehi/photo_2023-06-08_19-17-22.jpg" alt="">
+                     <img class="pic__item" src="img/pomehi/1.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="perek">
+                  <div class="cancel__title">Перекрытие разметки</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/perek/2.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="neGrnz">
+                  <div class="cancel__title">Не ГРНЗ</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/neGrnz/photo_2023-05-31_18-56-14.jpg" alt="">
+                     <img class="pic__item" src="img/neGrnz/photo_2023-05-31_13-25-25 (2).jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="sehCam">
+                  <div class="cancel__title">Съехала камера</div>
+                  <div class="cancel__text">При съездах масштаба вперед или вниз от разметки – нарушения отменяются.
+                     <br>
+                     В г. Усть-Каменогорск, Семей, Актау определены критичные съезды масштабов, которые могут отличаться
+                     по критичности от других городов.
+                  </div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/sehalaCamera/photo_2023-05-31_13-25-26.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaCamera/photo_2023-07-20_15-38-18.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaCamera/photo_2023-07-21_15-09-26.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaCamera/photo_2023-07-21_15-49-02.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="focus">
+                  <div class="cancel__title">Сбился фокус</div>
+                  <div class="cancel__text">Сбитый фокус - изображение ТС на видео не четкое (размытое), мутная камера
+                  </div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/focus/photo_2023-05-31_15-08-00.jpg" alt="">
+                     <img class="pic__item" src="img/focus/photo_2023-05-31_19-03-57.jpg" alt="">
+                     <img class="pic__item" src="img/focus/photo_2023-07-05_15-26-18.jpg" alt="">
+                     <img class="pic__item" src="img/focus/1.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="sehNastr">
+                  <div class="cancel__title">Съехавшие настройки камеры</div>
+                  <div class="cancel__text">Камера не перешла в ночной/дневной режим. Рассинхрон камер (на обзорке нет
+                     авто)</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/sehalaNastroiki/photo_2023-05-31_15-09-57.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaNastroiki/photo_2023-05-20_02-16-44.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaNastroiki/photo_2023-07-05_15-24-40.jpg" alt="">
+                     <img class="pic__item" src="img/sehalaNastroiki/4.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="nomerVs">
+                  <div class="cancel__title">Номер расположен высоко</div>
+                  <div class="cancel__text">Номер расположен высоко - высоко расположенный ГРНЗ на габаритных ТС (на
+                     лобовом, на крыше и т.д.) по виду нарушения превышение скорости. <br>Синяя должна находится на
+                     уровне
+                     колес ТС. В случаях когда номер высоко -
+                     необходимо такие нарушения отменять. </div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/nomerVysoko/1.jpg" alt="">
+                     <img class="pic__item" src="img/nomerVysoko/photo_2023-05-31_15-11-16.jpg" alt="">
+                     <img class="pic__item" src="img/nomerVysoko/2.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="buksir">
+                  <div class="cancel__title">ТС на буксире/автовозе</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/tsNaBuksire/photo_2023-05-31_15-56-39.jpg" alt="">
+                     <img class="pic__item" src="img/tsNaBuksire/1.jpg" alt="">
+                     <img class="pic__item" src="img/tsNaBuksire/2.jpg" alt="">
+                     <img class="pic__item" src="img/tsNaBuksire/3.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="track">
+                  <div class="cancel__title">Ошибки в линии трека</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/track/1.jpg" alt="">
+                     <img class="pic__item" src="img/track/2.jpg" alt="">
+                     <img class="pic__item" src="img/track/3.jpg" alt="">
+                     <img class="pic__item" src="img/track/4.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="razmetki">
+                  <div class="cancel__title">Отсутствие разметок</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/otsutstvRazmetki/2.jpg" alt="">
+                     <img class="pic__item" src="img/otsutstvRazmetki/3.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="proekcia">
+                  <div class="cancel__title">Проблемы с определением проекции ТС</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/proekcia/1.jpg" alt="">
+                     <img class="pic__item" src="img/proekcia/2.jpg" alt="">
+                     <img class="pic__item" src="img/proekcia/3.jpg" alt="">
+                     <img class="pic__item" src="img/proekcia/4.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="obrezan">
+                  <div class="cancel__title">Обрезанное фото предписания</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/obrezan/photo_2023-06-02_18-17-45.jpg" alt="">
+                     <img class="pic__item" src="img/obrezan/2.jpg" alt="">
+                     <img class="pic__item" src="img/obrezan/3.jpg" alt="">
+                     <img class="pic__item" src="img/obrezan/4.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+               <div class="cancel" id="media">
+                  <div class="cancel__title">Отсутствие медифайлов</div>
+                  <div class="cancel__text">Здесь будет текст</div>
+                  <div class="pic">
+                     <img class="pic__item" src="img/media/photo_2023-08-07_13-43-31.jpg" alt="">
+                  </div>
+                  <a class="cancel__up" href="#main">Вернуться к списку отмен ⇧</a>
+               </div>
+
+            </div>
+         </div>
+      </main>
+      <footer class="footer">®Mak 2023</footer>
+   </div>
+</body>
+
+</html>
